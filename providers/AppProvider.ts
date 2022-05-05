@@ -3,7 +3,12 @@ import { ApplicationContract } from '@ioc:Adonis/Core/Application'
 export default class AppProvider {
   constructor(protected app: ApplicationContract) {}
 
+  public test() {
+    console.log('hello')
+  }
+
   public register() {
+    this.test()
     // Register your own bindings
   }
 
